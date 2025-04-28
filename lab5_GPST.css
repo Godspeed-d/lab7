@@ -1,19 +1,20 @@
+
 table {
-    border: 1.5px solid #006600; /* Dark green border */
-    border-collapse: collapse; /* No cell spacing */
+    border: 1.5px solid #006600; 
+    border-collapse: collapse;
 }
 
 td, th {
-    padding: 0.5em; /* Padding */
-    border: 1px solid #006600; /* Dark green border for td and th */
+    padding: 0.5em; 
+    border: 1px solid #006600; 
 }
 
 tr:nth-of-type(odd) {
-    background-color: #ECF9EC; /* Light green background for odd rows */
+    background-color: #ECF9EC; 
 }
 
 h3 {
-    color: #006646; /* Dark green text color */
+    color: #006646;
 }
 
 header, main, nav, footer, figure, figcaption, aside, section, article {
@@ -178,7 +179,7 @@ label {
 input[type="text"], input[type="email"], input[type="tel"], textarea {
     display: block;
     margin-bottom: 20px;
-    width: 100%; /* Ensures the form inputs stretch across the available space */
+    width: 100%;
 }
 
 input[type="submit"] {
@@ -196,7 +197,7 @@ input[type="submit"] {
     }
 
     input[type="text"], input[type="email"], input[type="tel"], textarea {
-        width: 100%; /* Makes inputs full-width on smaller screens */
+        width: 100%; 
     }
 }
 
@@ -295,7 +296,7 @@ input[type="submit"] {
 
 nav a {
     text-decoration: none;
-    transition: color 3s ease-out; /* Add the transition here */
+    transition: color 3s ease-out; 
 }
 
 nav a:link {
@@ -308,5 +309,66 @@ nav a:visited {
 
 nav a:hover {
     color: #FFFFFF;
+}
+
+
+
+
+#gallery {
+    position: relative;
+    height: 200px;
+}
+
+#gallery ul {
+    list-style-type: none; 
+    width: 300px;
+}
+
+#gallery li {
+    display: inline;
+    float: left;
+    padding: 10px; 
+}
+
+#gallery img {
+    border: none; 
+}
+
+#gallery a {
+    text-decoration: none; 
+    font-style: italic; 
+    color: white; 
+}
+
+#gallery span {
+    position: absolute; 
+    left: -1000px; 
+    opacity: 0;
+    transition: opacity 3s ease-in-out; 
+}
+
+
+#gallery a:hover span {
+    position: absolute;
+    top: 15px; 
+    left: 320px; 
+    text-align: center; 
+    opacity: 1; 
+}
+
+#gallery figure {
+    position: absolute;
+    left: 280px; 
+    opacity: 0.25; 
+}
+
+footer {
+    clear: both;
+}
+
+@media only screen and (max-width: 37.5em) {
+    #gallery {
+        display: none; /* Hide gallery on mobile devices with viewport width less than 37.5em */
+    }
 }
 
