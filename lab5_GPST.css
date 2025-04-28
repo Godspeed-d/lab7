@@ -291,3 +291,22 @@ input[type="submit"] {
 * {
     box-sizing: border-box;
 }
+/* Other existing styles */
+
+nav a {
+    text-decoration: none;
+    transition: color 3s ease-out; /* Add the transition here */
+}
+
+nav a:link {
+    color: #00664D;
+}
+
+nav a:visited {
+    color: #7A7A52;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+}
+
