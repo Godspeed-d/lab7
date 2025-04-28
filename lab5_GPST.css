@@ -292,7 +292,7 @@ input[type="submit"] {
 * {
     box-sizing: border-box;
 }
-/* Other existing styles */
+
 
 nav a {
     text-decoration: none;
@@ -368,7 +368,7 @@ footer {
 
 @media only screen and (max-width: 37.5em) {
     #gallery {
-        display: none; /* Hide gallery on mobile devices with viewport width less than 37.5em */
+        display: none; 
     }
 }
 
